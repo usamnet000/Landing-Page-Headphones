@@ -165,6 +165,12 @@ header .navigation {
   }
 }
 
+@media (max-width: 400px) {
+  .hero .hero_gfx {
+    height: calc(100vh - 220px);
+  }
+}
+
 /*--------------------*/
 .DesktopHero_card_uVp7s {
   position: absolute;
