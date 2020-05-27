@@ -1,14 +1,18 @@
 section {
   position: relative;
-  background: linear-gradient(
-      to bottom left,
-      #fff 0% /*bottom-right color*/,
-      #f3f3f3 100% /*top-bottom color*/
+  background: linear-gradient(to bottom left,
+      #fff 0%
+      /*bottom-right color*/
+      ,
+      #f3f3f3 100%
+      /*top-bottom color*/
     ),
     linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))
-      /*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+    /*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/
+  ;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
 }
+
 header {
   position: absolute;
   top: 30px;
@@ -25,6 +29,7 @@ header .logo {
   -ms-flex-align: center;
   align-items: center;
 }
+
 header .logo img {
   width: 85px;
 }
@@ -60,15 +65,18 @@ header .navigation {
   .navigation {
     width: 765px;
   }
+
   .Navigation_list {
     opacity: 0;
     visibility: hidden;
   }
+
   .fa-bars {
     opacity: 1;
     visibility: visible;
   }
 }
+
 .Navigation_item {
   display: -ms-flexbox;
   display: flex;
@@ -90,12 +98,14 @@ header .navigation {
   padding: 0.6em 2em;
   border-radius: 0.3em;
 }
+
 .Navigation_link:hover {
   /*border-color: #b2dd4c;*/
   background-image: linear-gradient(to top, #9edb44, #b2c683);
   transition-duration: 0.2s;
   color: white;
 }
+
 .Navigation_linkActive {
   background-image: linear-gradient(to top, #9edb44, #b2c683);
   color: white;
@@ -117,6 +127,7 @@ header .navigation {
   top: 9px;
   right: 36px;
 }
+
 /*--------------------------*/
 .hero {
   display: -ms-flexbox;
@@ -127,6 +138,7 @@ header .navigation {
   position: relative;
   z-index: 101;
 }
+
 .hero .hero_gfx {
   display: block;
   position: absolute;
@@ -149,6 +161,7 @@ header .navigation {
     position: absolute;
     right: 0;
     top: 0%;
+    height: calc(54vh - 220px);
   }
 }
 
@@ -166,28 +179,32 @@ header .navigation {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 @media (min-width: 1440px) {
   .DesktopHero_card_uVp7s {
     margin-left: -15vw;
   }
 }
+
 .DesktopHero_card_uVp7s.DesktopHero_isMobile_PoRy7 {
   top: 28%;
 }
+
 .DesktopHero_card__inner_2AUf9 {
   width: 100%;
   height: 100%;
   background: 0 0 no-repeat;
   background-size: contain;
-  animation: DesktopHero_hover_36dyM 2.25s 0.75s infinite alternate
-    cubic-bezier(0.43, 0.05, 0.6, 0.99);
+  animation: DesktopHero_hover_36dyM 2.25s 0.75s infinite alternate cubic-bezier(0.43, 0.05, 0.6, 0.99);
 }
-.DesktopHero_card__inner_2AUf9 > * {
+
+.DesktopHero_card__inner_2AUf9>* {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
 }
+
 .DesktopHero_phone_3Ky5B {
   position: absolute;
   top: 33.33333333%;
@@ -202,11 +219,13 @@ header .navigation {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 @media (min-width: 1200px) {
   .DesktopHero_phone_3Ky5B {
     margin-right: -28vw;
   }
 }
+
 @media (max-width: 800px) {
   .DesktopHero_phone_3Ky5B {
     width: 0;
@@ -214,17 +233,19 @@ header .navigation {
     margin-right: -240px;
   }
 }
+
 .DesktopHero_hero_3HzY5.DesktopHero_isMobile_PoRy7 .DesktopHero_phone_3Ky5B {
   top: 50%;
 }
+
 .DesktopHero_phone__inner_1J5EA {
   width: 100%;
   height: 100%;
   background: 0 0 no-repeat;
   background-size: contain;
-  animation: DesktopHero_hover_36dyM 3s infinite alternate
-    cubic-bezier(0.43, 0.05, 0.6, 0.99);
+  animation: DesktopHero_hover_36dyM 3s infinite alternate cubic-bezier(0.43, 0.05, 0.6, 0.99);
 }
+
 @media (min-width: 2300px) {
   .DesktopHero_phone__inner_1J5EA {
     width: 100%;
@@ -232,12 +253,14 @@ header .navigation {
 }
 
 @media (max-width: 765px) {
+
   .DesktopHero_phone__inner_1J5EA,
   .DesktopHero_card__inner_2AUf9 {
     display: none;
   }
 }
-.DesktopHero_phone__inner_1J5EA > * {
+
+.DesktopHero_phone__inner_1J5EA>* {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -249,10 +272,12 @@ header .navigation {
   text-decoration: none;
   border-bottom: 1px solid #a7a8a9;
 }
+
 @keyframes DesktopHero_hover_36dyM {
   0% {
     transform: translateY(0);
   }
+
   to {
     transform: translateY(-10%);
   }
@@ -268,6 +293,7 @@ header .navigation {
   padding-right: calc(50% + 110px);
   width: 100%;
 }
+
 @media (min-height: 1060px) {
   .hero .content {
     display: -ms-flexbox;
@@ -277,6 +303,7 @@ header .navigation {
     padding-bottom: 100px;
   }
 }
+
 @media (max-width: 765px) {
   .hero .content {
     padding: 0 49px;
@@ -288,6 +315,7 @@ header .navigation {
   max-width: 600px;
   padding: 60px 0;
 }
+
 @media (min-width: 1200px) {
   .hero .contentInner {
     max-width: 450px;
@@ -306,31 +334,38 @@ header .navigation {
   color: #37383c;
   max-width: 400px;
 }
+
 @media (max-width: 765px) {
   .heading {
     color: white;
   }
 }
+
 .heading__line {
   overflow: hidden;
 }
+
 .heading__text {
   display: block;
 }
+
 .headingReady:before {
   opacity: 1;
 }
+
 .Hero_button {
   padding-right: 50px;
   font-size: 14px;
   margin-top: 34px;
   margin-bottom: 31px;
 }
+
 @media (min-width: 1200px) and (min-height: 960px) {
   .Hero_text {
     font-size: 16px;
   }
 }
+
 .hero_small {
   max-width: 440px;
   opacity: 0.75;
@@ -352,17 +387,21 @@ header .navigation {
   padding: 0.6em 2em;
   border-radius: 0.3em;
 }
+
 .button.green {
   background-image: linear-gradient(to top, #9edb44, #b2c683);
 }
+
 .button.green:hover {
   background-image: linear-gradient(to top, #abec4a, #c6ceb4);
 }
+
 .button.gray {
   color: #37383c;
   background-image: #fff;
   border: 2px solid #9edb44;
 }
+
 .button.gray:hover {
   color: white;
   background-image: linear-gradient(to top, #9edb44, #b2c683);
@@ -371,6 +410,7 @@ header .navigation {
 .Hero_button .mob-mb {
   display: inline;
 }
+
 @media (max-width: 765px) {
   .Hero_button .mob-mb {
     display: block;
